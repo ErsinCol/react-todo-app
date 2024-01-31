@@ -38,7 +38,7 @@ function App() {
         }else if(currentTab === "completed"){
             setDisplayList(completedTodos)
         }
-    }, [currentTab, todoList])
+    }, [currentTab, todoList, activeTodos, completedTodos])
 
     const toggleTodo = (id) => {
         const updatedList = todoList.map((todo)=>{
